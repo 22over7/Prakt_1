@@ -2,10 +2,10 @@
 
 int main()
 {
-	int m; //Gewicht
-	int l; //Groesse
-	int t; //Alter
-	//int g;
+	int m; 	//Gewicht
+	int l; 	//Groesse
+	int t; 	//Alter
+			//int g;
 
 	float k_mann;
 	float k_frau;
