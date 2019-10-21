@@ -237,7 +237,7 @@ boolean listDeleteElement(List* list, unsigned int value)
 
 	previous->pSuccessor = to_delete->pSuccessor;
 
-	free(listFindElement(list,value));
+	free(to_delete);
 
 	return TRUE;
 }
