@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lorenz/eclipse-workspace/Kalorienrechner/build/default",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG   -o CMakeFiles/Kalorienrechner.dir/Kalorienrechner.cpp.o -c /home/lorenz/eclipse-workspace/Kalorienrechner/Kalorienrechner.cpp",
+  "file": "/home/lorenz/eclipse-workspace/Kalorienrechner/Kalorienrechner.cpp"
+}
+]

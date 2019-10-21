@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lorenz/eclipse-workspace/Pins4/build/default",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG   -o CMakeFiles/Pins4.dir/Pins4.cpp.o -c /home/lorenz/eclipse-workspace/Pins4/Pins4.cpp",
+  "file": "/home/lorenz/eclipse-workspace/Pins4/Pins4.cpp"
+}
+]

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lorenz/eclipse-workspace/pins4_2/build/default",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG   -o CMakeFiles/pins4_2.dir/pins4_2.cpp.o -c /home/lorenz/eclipse-workspace/pins4_2/pins4_2.cpp",
+  "file": "/home/lorenz/eclipse-workspace/pins4_2/pins4_2.cpp"
+}
+]

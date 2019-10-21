@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lorenz/eclipse-workspace/Quersumme/build/cmake.debug.linux.x86_64",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/Quersumme.dir/Quersumme.cpp.o -c /home/lorenz/eclipse-workspace/Quersumme/Quersumme.cpp",
+  "file": "/home/lorenz/eclipse-workspace/Quersumme/Quersumme.cpp"
+}
+]

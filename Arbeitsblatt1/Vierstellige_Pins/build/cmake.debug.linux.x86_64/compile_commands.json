@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lorenz/eclipse-workspace/Vierstellige_Pins/build/cmake.debug.linux.x86_64",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/Vierstellige_Pins.dir/Vierstellige_Pins.cpp.o -c /home/lorenz/eclipse-workspace/Vierstellige_Pins/Vierstellige_Pins.cpp",
+  "file": "/home/lorenz/eclipse-workspace/Vierstellige_Pins/Vierstellige_Pins.cpp"
+}
+]
