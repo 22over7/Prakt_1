@@ -135,7 +135,7 @@ int listGetIndexOfElement(List* list, unsigned int value)
 		count++;
 
 	}
-	printf("%d ist nicht in der Liste.\n",value);
+	printf("listGetIndexOfElement error: %d not in list.\n",value);
 	return -1;
 }
 
@@ -147,7 +147,6 @@ int countList(List* list)
 	if(list->head == NULL)
 	{
 		printf("Liste Leer!");
-		return NULL;
 	}
 
 	while(current->pSuccessor != NULL)
@@ -194,13 +193,13 @@ boolean listSwapElements(List* list, unsigned int aIndex, unsigned int bIndex)
 {
 	if(list->head == NULL)
 	{
-		printf("Liste leer!");
+		printf("listSwapElements error: list empty\n");
 		return FALSE;
 	}
 
 	if(countList(list) < aIndex || countList(list) < bIndex)
 	{
-		printf("Liste zu kurz!\n");
+		printf("listSwapElements error: list too short\n");
 		return FALSE;
 	}
 
@@ -224,7 +223,7 @@ boolean listDeleteElement(List* list, unsigned int value)
 {
 	if(list->head == NULL)
 	{
-		printf("Liste leer!");
+		printf("listDelete Element error: list too short\n");
 		return FALSE;
 	}
 

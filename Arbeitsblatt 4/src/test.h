@@ -87,7 +87,7 @@ void testListGetElementAtIndex(void)
 	else printf("false\n");
 
 }
-unsigned testListGetIndexOf(void)
+void testListGetIndexOf(void)
 {
 	List* tList = listCreate();
 	if(listGetElementAtIndex(tList,5) == NULL)
@@ -112,7 +112,6 @@ unsigned testListGetIndexOf(void)
 		printf("true\n");
 	}
 	else printf("false\n");
-
 }
 
 #endif /* TEST_H_ */
