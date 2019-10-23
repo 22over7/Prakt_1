@@ -73,7 +73,7 @@ int main(void)
 	/*printf("Zeichen? \n");
 	scanf("%c",&c);*/
 
-	rechteck(5,1,'#');
+	rechteck(a,b,'#');
 
 	return 0;
 }
