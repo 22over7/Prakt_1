@@ -7,7 +7,14 @@ void rechteck(unsigned int b, unsigned int h, char c)
 	//Oberste Zeile
 	for (int i = 1; i <= b; i = i + 1)
 	{
-		printf("%c", c);
+		if (h == 0)
+		{
+			break;
+		}
+		else
+		{
+			printf("%c", c);
+		}
 	}
 	printf("\n");
 
@@ -21,7 +28,7 @@ void rechteck(unsigned int b, unsigned int h, char c)
 
 		for (int i3 = 1; i3 <= b; i3 = i3 + 1)
 		{
-			if (b == 1)
+			if (b == 1)  //Ausnahme für Breite 1
 			{
 				putchar(c);
 				printf("\n");
@@ -45,7 +52,7 @@ void rechteck(unsigned int b, unsigned int h, char c)
 	//Unterste Zeile
 	for (int i = 1; i <= b; i = i + 1)
 	{
-		if (h == 1 || h == 0)
+		if (h == 1 || h == 0) //Ausnahme für Höhe 1 und  0
 		{
 			break;
 		}
