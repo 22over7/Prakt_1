@@ -13,7 +13,7 @@ int calcSumIntArray(int* samples, int n)
 
 int main(void)
 {
-	int samples[] = {2,6,8,10,4};
+	int samples[] = {5,4,3,2,6};
 	int summe = calcSumIntArray(samples, 5);
 	printf("Die Summe des Arrays ist: %d", summe);
 
