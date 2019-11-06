@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void rechteck(unsigned int b, unsigned int h, char c)
 //a für breite, b für hoehe, c für das Zeichen
 {
@@ -99,11 +98,9 @@ int main(void)
 
 	rechteck(a,b,'#');
 
-	rechteck2();
+	//rechteck2();
 
 	return 0;
 }
-
-//beep
 
 
