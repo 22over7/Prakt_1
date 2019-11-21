@@ -14,7 +14,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
+#include <unistd.h>
 
 // Makros
 
@@ -110,11 +112,11 @@ void randMatrix(char matrix[MATRIXSIZE][MATRIXSIZE], int length, int max)
 	}
 }
 
-void countArray(const char* array,int length,char occurrence[256])
+void countArray(const char* array,int length, char occurrence[256])
 {
 	for(int i_occ = 0;i_occ < length; i_occ++)
 	{
-		occurrence[array[i_occ]]++;
+		occurrence[(int)array[i_occ]]++;
 	}
 }
 
@@ -133,7 +135,7 @@ void readInputAsString(char* array, int length)
 	char string[20];
 
 	printf("String eingeben: \n");
-	scanf("%s", &string);
+	scanf("%s", string);
 
 	for(int i_string = 0; i_string < length; i_string++)
 	{
@@ -198,56 +200,52 @@ void countLowerCase(char* array, int length)
 }
 char isUpperCase(char* array, int index)
 {
-	char upp_check;
 
 	if((array[index] >= 0x41) && (array[index] <= 0x5A))
-		upp_check = 1;
+		return 1;
 	else
-		upp_check = 0;
+		return 0;
 
-	return upp_check;
 }
 char isLowerCase(char* array, int index)
 {
-	char low_check;
 
 	if((array[index] >= 0x61) && (array[index] <= 0x7A))
-		low_check = 1;
+		return 1;
 	else
-		low_check = 0;
+		return 0;
 
-	return low_check;
 }
 
 
 void caesarChiffre(const char* array, int length, int shift)
 {
-	char caesar_array_clone[length];
+	char ccc[length];
 
-	for(int i_caesar_clone = 0; i_caesar_clone < length; i_caesar_clone++)
+	for(int i_cc = 0; i_cc < length; i_cc++)
 	{
-		caesar_array_clone[i_caesar_clone] = array[i_caesar_clone];
+		ccc[i_cc] = array[i_cc];
 	}
 
 	for(int i_shift = 0;i_shift < length; i_shift++)
 	{
-		if(((caesar_array_clone[i_shift] + shift) > 0x5A) && caesar_array_clone[i_shift] < 0x61)
+		if(((ccc[i_shift] + shift) > 0x5A) && ccc[i_shift] < 0x61)
 		{
-			caesar_array_clone[i_shift] = 0x41 + ((caesar_array_clone[i_shift] + shift) - 0x5A - 1);
+			ccc[i_shift] = 0x41 + ((ccc[i_shift] + shift) - 0x5A - 1);
 		}
-		else if((caesar_array_clone[i_shift] + shift) > 0x7A)
+		else if((ccc[i_shift] + shift) > 0x7A)
 		{
-			caesar_array_clone[i_shift] = 0x61 + ((caesar_array_clone[i_shift] + shift) - 0x7A - 1);
+			ccc[i_shift] = 0x61 + ((ccc[i_shift] + shift) - 0x7A - 1);
 		}
 		else
-			caesar_array_clone[i_shift] = (char)array[i_shift] + shift;
+			ccc[i_shift] = (char)array[i_shift] + shift;
 	}
 
 	printf("Original: ");
 	printArray(array,length);
 	printf("\n");
 	printf("Chiffre: ");
-	printArray(caesar_array_clone,length);
+	printArray(ccc,length);
 	printf("\n");
 }
 
@@ -320,16 +318,3 @@ void rotateMatrixRight(char matrix[MATRIXSIZE][MATRIXSIZE], int length)
 			}
 		}
 }
-
-
-/*
-// Aufgabe - Sudoku Test
-char lineTest(const char matrix[MATRIXSIZE][MATRIXSIZE], int line, int length) { }
-char columnTest(const char matrix[MATRIXSIZE][MATRIXSIZE], int column, int length)
-{  }
-char sudokuTest(const char matrix[MATRIXSIZE][MATRIXSIZE], int length)
-{ }
-void sudokuSolver(char matrix[MATRIXSIZE][MATRIXSIZE], int length)
-{ }
-*/
-

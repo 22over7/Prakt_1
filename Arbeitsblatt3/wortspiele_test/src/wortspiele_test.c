@@ -21,8 +21,8 @@ int main(void)
 	char array[10];
 	readInputAsString(array,10);
 
-	caesarChiffre(array,10,5);
 
+	caesarChiffre(array,10,2);
 
 
 	return 0;
