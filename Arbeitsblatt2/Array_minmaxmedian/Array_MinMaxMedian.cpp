@@ -13,7 +13,7 @@ int calcSumIntArray(int* samples, int n)
 
 int min(int* samples, int n)
 {
-	int min = 100;
+	int min = samples[0];
 	for(int i = 0; i < n; i++)
 	{
 		if (samples[i] < min)
@@ -26,7 +26,7 @@ int min(int* samples, int n)
 
 int max(int* samples, int n)
 {
-	int max = 0;
+	int max = samples[0];
 	for(int i = 0; i < n; i++)
 	{
 		if (samples[i] > max)
@@ -39,7 +39,7 @@ int max(int* samples, int n)
 
 float mean(int* samples, int n)
 {
-	return calcSumIntArray(samples, n)/n;
+	return calcSumIntArray(samples, n) / n;
 }
 
 int main (void)
