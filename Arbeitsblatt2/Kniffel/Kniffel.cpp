@@ -83,14 +83,16 @@ int main(void)
 	srand(getpid()); //Wird zur Initialisierung der Zufallszahlen benoetigt
 	float durchs = 0;
 	float count = 0;
+	int arr[] = {1,2,3,4,5,6};
+	printarr(arr,6);
 	wuerfe();
 
-	for(int i = 0; i < 1000; i++)
+	for(int i = 0; i < 10000; i++)
 	{
 		count = wuerfe() + count;
 	}
 
-	durchs = count / 1000;
+	durchs = count / 10000;
 	printf("Durchschnittlich %.2f Wuerfe bis zur grossen Strasse.", durchs);
 
 	return 0;
