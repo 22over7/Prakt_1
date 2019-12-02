@@ -17,11 +17,11 @@
 
 int main(void)
 {
-	printf("Hallo\n");
-	List* pList = listCreate();
+	printf(">>Begin:\n\n");
 
-	listFillRandom(pList,12,10,0,10);
-	listPrint(pList);
+	//test_PushPrint();
+	testListGetIndexOf();
 
+	printf(">>End");
 	return EXIT_SUCCESS;
 }

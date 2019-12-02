@@ -21,7 +21,7 @@ Element* elementCreate()
 	Element* pElement = (Element*) malloc(sizeof(Element));
 	pElement->pSuccessor = NULL;
 	pElement->value = 0;
-	printf("elementcreate\n");
+	//printf(">elementcreate at %x in memory\n",pElement);
 	return pElement;
 }
 
